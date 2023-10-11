@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gabarito:wght@500&family=Lato&family=Mukta:wght@600&family=MuseoModerno:wght@600&family=Open+Sans&family=PT+Sans:wght@700&family=Pixelify+Sans:wght@600&family=Poppins:wght@500&family=REM:wght@300&family=Roboto+Condensed&family=Roboto+Slab&family=Tilt+Neon&display=swap');
+
+body {
+    margin: 0 auto; 
+    font-family: 'pixelify sans';
+    text-align: center;
+}
+
+.intro {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-container {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button {
+    margin-right: 5px;
+}
+
+.commands {
+    margin-top: 10px;
+}
+
+#reset {
+    margin-top: 4px;
+}
+
+ul {
+    list-style-position: inside;
+}
