@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot and Cold</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Hot and Cold</h1>
-    <h3 class="intro">Introduction: In the game of Hot and Cold, the player gets a set number of turns to 'find' a number between 1 and 100. As the player guesses, (s)he will be informed of how close (s)he is to the actual number in terms of hot and cold.</h3>
+    <h3 class="intro">
+      Introduction: In the game of Hot and Cold, the player gets a set number of
+      turns to 'find' a number between 1 and 100. As the player guesses, (s)he
+      will be informed of how close (s)he is to the actual number in terms of
+      hot and cold.
+    </h3>
 
     <div class="content-container">
-        <h3>Number of Tries Left: <span id="tries">10</span></h3>
-        <h3>Result: <span id="result"></span></h3>
-        <input type="number" id="guessField">
-        <div class="button-container">
-            <div class="buttons">
-                <button id="1" class="button" onclick="increment(1)">+1</button>
-                <button id="5" class="button" onclick="increment(5)">+5</button>
-                <button id="10" class="button" onclick="increment(10)">+10</button>
-                <button id="25" class="button" onclick="increment(25)">+25</button>
-            </div>
-            <div class="commands">
-                <button id="clear" class="cmd">clear</button>
-                <button id="submit" class="cmd">commit</button>
-                <br>
-                <button id="reset">reset</button>
-            </div>
+      <h3>Number of Tries Left: <span id="tries">10</span></h3>
+      <h3>Result: <span id="result"></span></h3>
+      <input type="number" id="guessField" />
+      <div class="button-container">
+        <div class="buttons">
+          <button id="1" class="button" onclick="increment(1)">+1</button>
+          <button id="5" class="button" onclick="increment(5)">+5</button>
+          <button id="10" class="button" onclick="increment(10)">+10</button>
+          <button id="25" class="button" onclick="increment(25)">+25</button>
         </div>
+        <div class="commands">
+          <button id="clear" class="cmd">clear</button>
+          <button id="submit" class="cmd">commit</button>
+          <br />
+          <button id="reset">reset</button>
+        </div>
+      </div>
     </div>
 
-    
+      <div class="log-content-container">
+        <div class="log-content">
+            <h3>Logger</h3>
+            <ul id="log-list"></ul>
+        </div>
+      </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

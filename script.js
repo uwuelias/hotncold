@@ -5,9 +5,7 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('result');
 const triesLeft = document.getElementById('tries');
 const resetButton = document.getElementById('reset');
-const pastAnswers = [];
-const pastAnswersList = document.getElementById('log');
-let counter = 0;
+const itemList = document.getElementById('log-list');
 
 submitButton.addEventListener('click', checkNumber);
 clearButton.addEventListener('click', clear);
@@ -37,6 +35,7 @@ function checkNumber() {
         }  
         updateTriesLeft();
     }
+    appendToLogger();
 }
 
 function updateTriesLeft() {
@@ -67,4 +66,20 @@ function reset() {
     submitButton.addEventListener('click', checkNumber);
     output.textContent = "";
     inputField.value = "";
+    while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild);
+    }
 }
+
+function appendToLogger() {
+    const itemText = inputField.value;
+
+    if (itemText.trim() !== "") {
+        const listItem = document.createElement('li');
+        listItem.textContent = itemText;
+        itemList.appendChild(listItem);
+        inputField.value = "";
+    }
+}
+
+
